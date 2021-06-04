@@ -1,0 +1,10 @@
+#TYPE Selected.System.IO.FileInfo
+"FullName","Name","DateTime","PropertyName"
+"D:\TRAVAIL\BACH_ASI\FormationPowerShell\Scripts\1.HelloWorld.ps1","1.HelloWorld.ps1","17/12/2019 23:40:14","CustomValue"
+"D:\TRAVAIL\BACH_ASI\FormationPowerShell\Scripts\Ex2.ps1","Ex2.ps1","17/12/2019 23:40:14","CustomValue"
+"D:\TRAVAIL\BACH_ASI\FormationPowerShell\Scripts\Ex2.txt","Ex2.txt","17/12/2019 23:40:14","CustomValue"
+"D:\TRAVAIL\BACH_ASI\FormationPowerShell\Scripts\Ex3.ps1","Ex3.ps1","17/12/2019 23:40:14","CustomValue"
+"D:\TRAVAIL\BACH_ASI\FormationPowerShell\Scripts\Ex4.ps1","Ex4.ps1","17/12/2019 23:40:14","CustomValue"
+"D:\TRAVAIL\BACH_ASI\FormationPowerShell\Scripts\Ex5.ps1","Ex5.ps1","17/12/2019 23:40:14","CustomValue"
+"D:\TRAVAIL\BACH_ASI\FormationPowerShell\Scripts\Ex6.ps1","Ex6.ps1","17/12/2019 23:40:14","CustomValue"
+"D:\TRAVAIL\BACH_ASI\FormationPowerShell\Scripts\export.csv","export.csv","17/12/2019 23:40:14","CustomValue"
