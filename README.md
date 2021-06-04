@@ -1,4 +1,7 @@
-Exercice 1 : Mise en place de l’environnement de travail sur PowerShell (60 min)
+#TP POWERSHELL
+
+##Exercice 1 : Mise en place de l’environnement de travail sur PowerShell (60 min)
+
 01.	Sur votre PC, si ce n’est pas encore fait, créez un dossier FormationPowerShell contenant les documents du cours que vous avez récupéré et un dossier vide nommé Scripts.
 02.	A l’aide de notepad, créez un fichier nommée 1.HelloWorld.ps1 dans le dossier Scripts contenant le code suivant :
 echo "Hello World!"
@@ -41,7 +44,9 @@ Le résultat doit être : RemoteSigned
 PowerShell.exe –File "1.HelloWorld.ps1"
 16.	Fermez à nouveau la console puis rouvrez-la en mode admin, positionnez-vous sur le même dossier et exécutez à nouveau la commande précédente en constatant son succès. PowerShell.exe –File "1.HelloWorld.ps1"
 
-Exercice 2 : Flux de sortie (20 min)
+
+##Exercice 2 : Flux de sortie (20 min)
+
 1)	Créez un script Ex2.ps1 dans scripts
 2)	Ouvrez PowerShell et positionnez-le sur le dossier Scripts afin de pouvoir exécuter Ex2.ps1 à chaque modification
 3)	Ajoutez une ligne dans Ex2.ps1 afin qu’il affiche le contenu du dossier courant
@@ -54,7 +59,9 @@ a.	En redirigeant le flux d’erreurs vers un fichier Ex2.err
 b.	En redirigeant le flux d’erreur vers le flux de sortie (stdout) et le flux de sortie (stdout) vers le fichier Ex2.err
 c.	Quelle est la différence entre les 2 méthodes ?
 
-Exercice 3 : Alias (10 min)
+
+##Exercice 3 : Alias (10 min)
+
 1)	Ouvrez PowerShell
 2)	Exécutez la commande : Test-NetConnection
 3)	Définissez un alias MonAlias à cette commande et exécutez-le
@@ -67,7 +74,9 @@ Exercice 3 : Alias (10 min)
 10)	Depuis la console PowerShell, essayez d’utiliser les alias créés dans le fichier Ex3.ps1, que remarquez-vous ? 
 11)	Depuis la console exécutez ceci : $pshome
 
-Exercice 4 : Pipe, select-object et/ou foreach (35 min)
+
+##Exercice 4 : Pipe, select-object et/ou foreach (35 min)
+
 1)	Créez un nouveau script Ex4.ps1, ouvrez la console Powershell et positionnez-la sur le répertoire Scripts.
 2)	Affichez le contenu de c:\ => Get-ChildItem "C:\"
 3)	Notez les propriétés affichées (nom des colonnes)
@@ -80,7 +89,9 @@ Exercice 4 : Pipe, select-object et/ou foreach (35 min)
 10)	Affichez la liste des fichiers de c:\ (pas les dossiers)
 11)	Parcourez l’aide en ligne de get-childItem, trouvez une fonctionnalité qui vous paraît intéressante comprenez-là bien, testez-la et présentez-là
 
-Exercice 5 : .Net (15 min)
+
+##Exercice 5 : .Net (15 min)
+
 1)	Ecrivez un script Ex5.ps1, ouvrez la console Powershell et positionnez-la sur le répertoire des scripts
 2)	Appelez la méthode .Net qui affiche l’heure
 3)	En utilisant les appels .Net affichez le message suivante : On est  <nom de la journée d’aujourd’hui>, demain c’est <nom de la journée de demain>
@@ -90,7 +101,7 @@ Si ça s’affiche en anglais, c’est bon aussi ne faites pas la traduction
 Recherchez la classe, la dll et comment la charger avec powershell sur internet
 
 
-Exercice 6 : Création objets (20 min)
+##Exercice 6 : Création objets (20 min)
 
 1)	Ecrivez un script Ex6.ps1, ouvrez la console Powershell et positionnez-la sur le répertoire des scripts
 2)	Instanciez un objet .Net System.DateTime en lui passant des paramètres de telle sortie que la date obtenue soit le 01/01/2000. Affichez le jour de la semaine de cette date
@@ -99,7 +110,9 @@ Exercice 6 : Création objets (20 min)
 5)	Exportez le résultat précédent dans un fichier csv nommé root.csv
 6)	Refaites la question 4 en utilisant les différentes options de formatage
 
-Exercice 7 : Variables et tableaux (20 min)
+
+##Exercice 7 : Variables et tableaux (20 min)
+
 1)	Ecrivez un script Ex7.ps1, ouvrez la console Powershell et positionnez-la sur le répertoire des scripts
 2)	Déclarez une variable nommée nom et affectez lui votre nom
 3)	Affichez-là
@@ -116,16 +129,22 @@ Exercice 7 : Variables et tableaux (20 min)
 14)	Affichez le 4ème entier du tableau
 15)	Dans une seule ligne, déclarez 4 variables, chacune contenant une entrée du tableau puis affichez-les
 
-Exercice 8 : opérateurs de comparaison (5 min En binôme)
+
+##Exercice 8 : opérateurs de comparaison (5 min En binôme)
+
 1)	Formez des binômes
 2)	L’un dessine à l’autre un symbole de comparaison, l’autre répond par la syntaxe powershell. Exemple : le 1er montre le symbole >= l’autre répond par -ge.
 3)	Répétez l’opération jusqu’à ce qu’il n’y ait plus d’erreurs
 
-Exercice 9 : Opérateurs (25 min)
+
+##Exercice 9 : Opérateurs (25 min)
+
 1)	Ecrivez un script Ex9.ps1, ouvrez la console Powershell et positionnez-la sur le répertoire des scripts
 2)	Testez l’ensemble des opérateurs décrits dans le cours (2 exemples par opérateur), en cas de doute sur un opérateur, cherchez sa définition sur internet.
  
-Exercice 10 : Opérations de base (15 min)
+
+##Exercice 10 : Opérations de base (15 min)
+
 Soit le script suivant : 
 
 $processName = $args[0]
@@ -136,9 +155,14 @@ $p | Format-List Id, Name, Description, Product, VM, StartTime
 1)	Expliquez ce que fait ce script
 2)	Modifiez le script pour obtenir un affichage en format-table
 
-Exercice 11 : Opérations de base (15 min)
+
+##Exercice 11 : Opérations de base (15 min)
+
 Ecrivez un script qui permet de lister les fichiers qui dépasse une certaine taille (par exemple 1 méga octet). On affiche seulement le nom et la taille du fichier. L’affichage doit se faire du plus lourd vers le plus léger (ordre inverse sur la taille du fichier).
-Exercice 12 : IF (20 min)
+
+
+##Exercice 12 : IF (20 min)
+
 Ecrivez un script dans lequel  vous 
 1)	Demandez à l’utilisateur d’entrer son nom avec le message « Entrer votre nom : » stockez la valeur saisie dans une variable nom. Faites la même chose pour prenom.
 
@@ -155,7 +179,9 @@ Si age < 21 ans, affichez la ligne suivante
 	Si age > 22, affichez :
 Vous avez <age> ans !
 
-Exercice 13 : Exercice final => jeu de devinette
+
+##Exercice 13 : Exercice final => jeu de devinette
+
 Ecrivez un script qui définit une valeur aléatoire entre 1 et mille (get-random 1000) et demande à l’utilisateur de la trouver.
 A chaque entrée de l’utilisateur, le script indique s’il est au-dessus ou en dessous la valeur à trouver.
 Une fois la valeur trouvée, le script affiche un message de félicitations avec le nb de tentatives effectuées pour trouver le nombre.
